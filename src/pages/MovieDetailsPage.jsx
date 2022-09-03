@@ -43,18 +43,18 @@ export default function MovieDetailsPage() {
       <h4>Additional information</h4>
       <ul>
         <li>
-          <NavLink to="cast" state={{ from: location }}>
+          <NavLink to="cast" state={{ from: location.pathname }}>
             Cast
           </NavLink>
         </li>
         <li>
-          <NavLink to="reviews" state={{ from: location }}>
+          <NavLink to="reviews" state={{ from: location.pathname }}>
             Reviews
           </NavLink>
         </li>
       </ul>
       <hr></hr>
-      <Outlet></Outlet>
+      <Outlet />
     </>
   );
 }
